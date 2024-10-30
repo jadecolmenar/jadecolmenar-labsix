@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jade Colmenar Portfolio</title>
+    <!-- Link to external CSS for styling -->
+    <link rel="stylesheet" href="style.css">
+    <!-- GitHub link: https://jadecolmenar.github.io/jadecolmenar-lab6/ -->
+
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Contact Me</h1>
+        <!-- Start of Form -->
+        <form id="contactForm">
+
+
+            <!-- Text input for First and Last name -->
+            <label for="fname">First Name:</label><br>
+                <input type="text" id="name" name="name" required>
+            <label for="lname">Last name:</label><br>
+                <input type="text" id="name" name="name" required>
+
+
+            <!-- Email input -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- Phone Number input -->
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phone" name="phone"
+            placeholder="123-45-678"><br><br>
+
+            <!-- Radio buttons: Preferred Method of contact-->
+            <label>Preferred Method of Contact:</label><br>
+                <input type="radio" id="callMethod" name="contactMethod" value="callMethod">
+                <label for="call">Phone Number:</label>
+                <input type="radio" id="emailMethod" name="contactMethod" value="emailMethod">
+                <label for="emailMethod">Email</label><br><br>
+    
+
+
+            <!-- Collaboration intrest -->
+            <label>What type of Collaboration are you intersted in?</label><br>
+            <input type="checkbox" id="interest1" name="interests" value="Product Updates">
+            <label for="interest1">Design</label><br>
+            <input type="checkbox" id="interest2" name="interests" value="Promotions">
+            <label for="interest2">Development</label><br>
+            <input type="checkbox" id="interest3" name="interests" value="Product Updates">
+            <label for="interest3">None</label><br><br>
+
+            
+            <!-- Radio buttons: yes no question-->
+            <label>Would you like to stay in touch?</label><br>
+            <input type="radio" id="yes" name="yes" value="yes">
+                <label for="yes">Yes, Please!</label><br>
+            <input type="radio" id="no" name="no" value="no">
+               <label for="no">No, Thanks!</label><br><br>
+
+
+            <!-- input list -->
+            <label>How did you Find me?</label><br>
+            <input list="findMe" name="findMe">
+                <datalist id="findMe">
+                  <option value="Social Media">
+                  <option value="Friend/Colleague">
+                  <option value="Search Engine">
+                  <option value="Other">
+                </datalist><br><br>
+            
+
+            <!-- intrests with work input -->
+            <label for="workIntrest">What specific project or aspect of my work caught your attention?</label><br>
+            <input type="text" id="workIntrest" name="workIntrest"><br>
+        
+
+            <!-- Multiple text area -->
+            <br><label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <br>
+
+            <!-- Submit and Reset buttons -->
+            <button id="submitBtn">Submit</button>
+            <button type="reset" id="clearBtn">Clear</button>
+            <br>
+
+        </form>
+    </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Jade Colmenar Portfolio. All rights reserved.</p>
+        </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
