@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
             phone: form.phone.value,
             contactMethod: form.querySelector('input[name="contactMethod"]:checked')?.value || '',
             interests: Array.from(form.querySelectorAll('input[name="interests"]:checked')).map(checkbox => checkbox.value),
-            stayInTouch: form.querySelector('input[name="yes"]:checked')?.value || '',
+            stayInTouch: form.querySelector('input[name="yes"]:checked')?.value || 'no',
             findMe: form.findMe.value,
             workInterest: form.workIntrest.value,
             message: form.message.value
