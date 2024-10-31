@@ -38,9 +38,9 @@
             <input type="email" id="email" name="email" required>
 
             <!-- Phone Number input -->
-            <label for="phoneNumber">Phone Number:</label>
-            <input type="tel" id="phone" name="phone"
-            placeholder="123-45-678"><br><br>
+           
+            <label for="phone">Enter a phone number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br><br>
 
             <!-- Radio buttons: Preferred Method of contact-->
             <label>Preferred Method of Contact:</label><br>
@@ -53,47 +53,47 @@
 
             <!-- Collaboration intrest -->
             <label>What type of Collaboration are you intersted in?</label><br>
-            <input type="checkbox" id="interest1" name="interests" value="Product Updates">
+            <input type="checkbox" id="interest1" name="interests" value="Design">
             <label for="interest1">Design</label><br>
-            <input type="checkbox" id="interest2" name="interests" value="Promotions">
+            <input type="checkbox" id="interest2" name="interests" value="Development">
             <label for="interest2">Development</label><br>
-            <input type="checkbox" id="interest3" name="interests" value="Product Updates">
+            <input type="checkbox" id="interest3" name="interests" value="None">
             <label for="interest3">None</label><br><br>
 
-            
+
             <!-- Radio buttons: yes no question-->
             <label>Would you like to stay in touch?</label><br>
-            <input type="radio" id="yes" name="yes" value="yes">
-                <label for="yes">Yes, Please!</label><br>
-            <input type="radio" id="no" name="no" value="no">
-               <label for="no">No, Thanks!</label><br><br>
+                <input type="radio" id="stayInTouchYes" name="stayInTouch" value="yes">
+                <label for="stayInTouchYes">Yes, Please</label><br>
+                <input type="radio" id="stayInTouchNo" name="stayInTouch" value="no">
+                <label for="stayInTouchNo">No, Thanks</label><br><br>
 
 
             <!-- input list -->
             <label>How did you Find me?</label><br>
             <input list="findMe" name="findMe">
-                <datalist id="findMe">
+                <select id="findMe">
                   <option value="Social Media">
                   <option value="Friend/Colleague">
                   <option value="Search Engine">
                   <option value="Other">
-                </datalist><br><br>
+                </select><br><br>
             
 
-            <!-- intrests with work input -->
-            <label for="workIntrest">What specific project or aspect of my work caught your attention?</label><br>
-            <input type="text" id="workIntrest" name="workIntrest"><br>
-        
-
-            <!-- Multiple text area -->
-            <br><label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-            <br>
-
-            <!-- Submit and Reset buttons -->
-            <button id="submitBtn">Submit</button>
-            <button type="reset" id="clearBtn">Clear</button>
-            <br>
+             <!-- intrests with work input -->
+             <label for="workIntrest">What specific project or aspect of my work caught your attention?</label><br>
+             <input type="text" id="workIntrest" name="workIntrest"><br>
+         
+ 
+             <!-- Multiple text area -->
+             <br><label for="message">Message:</label>
+             <textarea resize=none id="message" name="message" rows="4" required></textarea>
+             <br>
+ 
+             <!-- Submit and Reset buttons -->
+             <button id="submitBtn">Submit</button>
+             <button type="reset" id="clearBtn">Clear</button>
+             <br>
 
         </form>
     </main>
